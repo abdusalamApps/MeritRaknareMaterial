@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kinga.meritraknare_material.EditorActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+
+            >
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/colorPrimary"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                app:layout_scrollFlags="scroll|enterAlways"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical">
+
+                    <FrameLayout
+                        android:id="@+id/close_tb_iv"
+                        android:layout_width="48dp"
+                        android:layout_height="match_parent"
+                        android:background="?attr/selectableItemBackgroundBorderless">
+
+                        <ImageView
+                            android:layout_width="18dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:contentDescription="@string/filter"
+                            android:padding="2dp"
+                            android:src="@drawable/ic_x_letter" />
+                    </FrameLayout>
+
+                    <ImageView
+                        android:id="@+id/confirm_tb_iv"
+                        android:layout_width="42dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="8dp"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:contentDescription="@string/filter"
+                        android:scaleType="center"
+                        android:scaleX="1.5"
+                        android:scaleY="1.5"
+                        android:src="@drawable/ic_confirm" />
+
+                </RelativeLayout>
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.design.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="100dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="20dp"
+                >
+
+
+                <LinearLayout
+                    android:id="@+id/form_linear_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="16dp"
+                    android:orientation="vertical">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/course_textInputLayout"
+                        style="@style/Widget.MeritRaknare.TextInputLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/kurskod_eller_namn"
+                        >
+
+                        <com.kinga.meritraknare_material.AutoCompleteTextInputEditText
+                            android:id="@+id/course_et"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:completionThreshold="1"
+                            android:inputType="textPersonName|textAutoComplete"
+                            android:maxLines="1"
+                            tools:text="Some text"
+                            android:paddingStart="12dp"
+                            android:paddingEnd="12dp"
+                            android:paddingTop="16dp"
+                            android:paddingBottom="16dp"
+                            />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp">
+
+                        <TextView
+                            android:id="@+id/milkLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/typ" />
+
+                        <android.support.v7.widget.AppCompatSpinner
+                            android:id="@+id/course_type_spinner"
+                            style="@style/FormTextStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/milkLabel"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentEnd="true"
+                            android:drawSelectorOnTop="true"
+                            android:paddingTop="16dp"
+                            android:paddingBottom="16dp">
+
+                        </android.support.v7.widget.AppCompatSpinner>
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:baselineAligned="false"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/gradeLabel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/betyg" />
+
+                            <android.support.v7.widget.AppCompatSpinner
+                                android:id="@+id/grade_spinner"
+                                style="@style/FormTextStyle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/gradeLabel"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentEnd="true"
+                                android:drawSelectorOnTop="true"
+                                android:paddingTop="16dp"
+                                android:paddingBottom="16dp">
+
+                            </android.support.v7.widget.AppCompatSpinner>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="16dp"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/pointsLabel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/poang" />
+
+                            <android.support.v7.widget.AppCompatSpinner
+                                android:id="@+id/points_spinner"
+                                style="@style/FormTextStyle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/pointsLabel"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentEnd="true"
+                                android:drawSelectorOnTop="true"
+                                android:paddingTop="16dp"
+                                android:paddingBottom="16dp">
+
+                            </android.support.v7.widget.AppCompatSpinner>
+
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="21dp"
+                android:paddingStart="48dp"
+                android:paddingEnd="48dp"
+                app:layout_anchor="@id/cardView"
+                app:layout_anchorGravity="bottom">
+
+                <TextView
+                    android:id="@+id/add_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_corners_background"
+                    android:foreground="?android:selectableItemBackground"
+                    android:gravity="center_horizontal"
+                    android:padding="14dp"
+                    android:text="@string/add"
+                    android:textColor="#fff"
+                    android:textSize="16sp"
+                    />
+
+                <TextView
+                    android:id="@+id/delete_button_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_corners_background_red"
+                    android:foreground="?android:selectableItemBackground"
+                    android:gravity="center_horizontal"
+                    android:padding="14dp"
+                    android:text="@string/ta_bort"
+                    android:textColor="#fff"
+                    android:textSize="16sp"
+                    />
+
+            </FrameLayout>
+        </android.support.design.widget.CoordinatorLayout>
+    </LinearLayout>
+</ScrollView>

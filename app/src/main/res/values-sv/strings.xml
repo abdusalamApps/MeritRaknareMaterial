@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Meriträknare</string>
+    <string name="filter">Filtrera</string>
+    <string name="type_gymnasiegemensam">"Gymnasiegemensam kurs "</string>
+    <string name="type_programgemnsam">"Programgemensam kurs "</string>
+    <string name="type_programfordumpning">Programm recess</string>
+    <string name="type_utokad">Extended course</string>
+    <string name="type_inriktning_gem">Inriktningsgemensam kurs</string>
+    <string name="error_deleting_course">Error with deleting course</string>
+    <string name="course_deleted">Course deleted</string>
+    <string name="delete">Delete</string>
+    <string name="ekonomiprogrammet">Ekonomiprogrammet</string>
+    <string name="estetiska_programmet">Estetiska programmet</string>
+    <string name="humanistiska_programmet">Humanistiska programmet</string>
+    <string name="naturvetenskapsprogrammet">Naturvetenskapsprogrammet</string>
+    <string name="samhallskunskapsprogrammet">Samhällsvetenskapsprogrammet</string>
+    <string name="teknikprogrammet">Teknikprogrammet</string>
+    <string name="kurs">Kurs</string>
+    <string name="betyg">Betyg</string>
+    <string name="poang">Poäng</string>
+    <string name="typ">Typ</string>
+    <string name="kurskod_eller_namn">Kurskod eller namn</string>
+    <string name="add">Lägg till</string>
+    <string name="ta_bort">Ta bort</string>
+    <string name="course_count">Antalet kurser</string>
+    <string name="points_sum">Totala Poäng</string>
+    <string name="extras">Meriter</string>
+    <string name="rating">Meritvärde</string>
+    <string name="comparison_sum">Jämförelsetal</string>
+    <string name="reset">Återställ appen</string>
+    <string name="grades_value">Betygsvärde</string>
+    <string name="share">dela</string>
+    <string name="done">klar</string>
+    <string name="type_indval">Individuellt val</string>
+    <string name="search">Sök</string>
+    <string name="my_highSchool_Rating">Mitt meritvärde</string>
+    <string name="language">Språk</string>
+</resources>

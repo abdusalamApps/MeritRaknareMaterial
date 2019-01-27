@@ -1,0 +1,99 @@
+{
+  "project_info": {
+    "project_number": "418573500648",
+    "firebase_url": "https://meritcalculater.firebaseio.com",
+    "project_id": "meritcalculater",
+    "storage_bucket": "meritcalculater.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:418573500648:android:0bfe602e405daaa1",
+        "android_client_info": {
+          "package_name": "com.example.kinga.meritcalculater_firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "418573500648-h0q0grrormnngapdl88m3bt7k9kuguct.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.kinga.meritcalculater_firebase",
+            "certificate_hash": "087eb033d66388943d2898973c427c79f0488e11"
+          }
+        },
+        {
+          "client_id": "418573500648-fc32slb6lo19igod7peigqh5efqd2ak6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDkky5ZBvNBwx1NeXXy9a7H0-_AVQr38g4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "418573500648-fc32slb6lo19igod7peigqh5efqd2ak6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:418573500648:android:3fe74e92abef5b09",
+        "android_client_info": {
+          "package_name": "com.kinga.meritraknare_material"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "418573500648-5nei7i5fblnts6p55od5rb8ug1gma6us.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kinga.meritraknare_material",
+            "certificate_hash": "087eb033d66388943d2898973c427c79f0488e11"
+          }
+        },
+        {
+          "client_id": "418573500648-fc32slb6lo19igod7peigqh5efqd2ak6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDkky5ZBvNBwx1NeXXy9a7H0-_AVQr38g4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "418573500648-fc32slb6lo19igod7peigqh5efqd2ak6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
